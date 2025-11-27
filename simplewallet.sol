@@ -1,7 +1,9 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.30;
 
-contract SimpleWallet {
+import "@openzeppelin/contracts/utils/ReentrancyGuard.sol";
+
+contract SimpleWallet is ReentrancyGuard {
     address public owner;
 
     constructor() {
@@ -14,7 +16,7 @@ contract SimpleWallet {
         return address(this).balance;
     }
 
-    function withdraw(uint amount) public {
+    function withdraw(uint amount) external nonReentrant {
         require(msg.sender == owner, "Only owner can call this");
         payable(msg.sender).transfer(amount);
     }
