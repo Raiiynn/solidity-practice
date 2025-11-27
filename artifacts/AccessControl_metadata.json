@@ -1,0 +1,71 @@
+{
+	"compiler": {
+		"version": "0.8.30+commit.73712a01"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "doAdminTask",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"accesscontrol.sol": "AccessControl"
+		},
+		"evmVersion": "prague",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"accesscontrol.sol": {
+			"keccak256": "0x872e8d038c54cc378bbd87a41852b0439e55ed24b1d45f95b383335e0191fda0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://af46b67fec051d3bfa6c9f167213a89ed571609a3799404352f9aaeb942ca9a2",
+				"dweb:/ipfs/Qmc7fddnmbKhFaQd61vyyCjSE48FcFLy3xnuAaFgMwQMa6"
+			]
+		}
+	},
+	"version": 1
+}
