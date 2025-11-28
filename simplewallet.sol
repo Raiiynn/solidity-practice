@@ -16,7 +16,7 @@ contract SimpleWallet is ReentrancyGuard {
         return address(this).balance;
     }
 
-    function withdraw(uint amount) external nonReentrant {
+    function withdraw(uint amount) public {
         require(msg.sender == owner, "Only owner can call this");
         payable(msg.sender).transfer(amount);
     }
